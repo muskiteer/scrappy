@@ -266,6 +266,7 @@ def scroll_inner_container(page, collected):
         container.wait_for(timeout=15000, state="visible")
         print("[SCROLL] Inner container found, scrolling...")
     except Exception:
+        print("gggggggggggggggggggggggggggggggggggggggggggggg")
         print("[SCROLL] ⚠️  Inner container not found — falling back to PageDown")
         _fallback_scroll(page, collected)
         return
@@ -338,6 +339,7 @@ def scrape_blinkit(pincode):
                 "--disable-dev-shm-usage",
             ]
         )
+        print("Chrome running")
         context = browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
