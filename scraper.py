@@ -331,7 +331,6 @@ def scrape_blinkit(pincode):
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
-            channel="chrome",
             args=[
                 "--disable-blink-features=AutomationControlled",
                 "--disable-extensions",
