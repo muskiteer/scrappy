@@ -328,8 +328,10 @@ def scrape_blinkit(pincode):
         except Exception:
             pass
 
-            browser = p.chromium.launch(
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
             headless=True,
+            channel="chrome",
             args=[
                 "--disable-blink-features=AutomationControlled",
                 "--disable-extensions",
