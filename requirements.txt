@@ -1,0 +1,13 @@
+# requirements.txt
+# Web automation
+playwright>=1.55.0
+
+# HTML parsing
+lxml>=5.3.0
+
+# Data handling & export
+pandas>=2.2.0
+
+# Standard library (no install needed, listed for clarity)
+# os, re, json, datetime — built-in
+python-dotenv==0.19.2
